@@ -1,7 +1,9 @@
 # ToDoList
 
-Simple "To do List". Design adaptive using Materialize css. MongoDB database is used for data storage.
-The server part is written with node js and express
+Simple "To do List".
+The training project was created to practice the skills of creating a simple application using Node js and Express and connecting to a database.
+Design adaptive using Materialize css. MongoDB database is used for data storage.
+The server part is written with node js and express.
 
 # Demo:
 👉 Demo: https://obscure-temple-01430.herokuapp.com/
