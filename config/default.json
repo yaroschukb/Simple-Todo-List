@@ -1,5 +1,0 @@
-{
-    "port": 3000,
-    "jwtSecret": "Bohdan stydy project",
-    "mongoUri": "mongodb+srv://Jim_Raynor:123jim123@cluster0.egqey.azure.mongodb.net/toDos"
-}
