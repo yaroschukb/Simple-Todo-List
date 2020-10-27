@@ -3,7 +3,7 @@
 Simple "To do List". Design adaptive using Materialize css. MongoDB database is used for data storage.
 The server part is written with node js and express
 
-# Demo Website!
+# Demo:
 👉 Demo: https://obscure-temple-01430.herokuapp.com/
 👉 Demo-video: https://youtu.be/mB-xw0iVebE
 
