@@ -1,0 +1,57 @@
+<nav class="nav-wraper purple darken-4 col xl12">
+    <div class="container">
+      <a href="/" class="brand-logo">ToDoList</a>
+      <a href="#" class="sidenav-trigger" data-target="mobile-links">
+          <i class="material-icons">menu</i>
+      </a>
+      <ul  class="right hide-on-med-and-down">
+        {{#if isIndex}}
+            <li class="active pink accent-2"><a href="/">ToDos</a></li>
+        {{else}}
+            <li><a href="/">ToDos</a></li>
+        {{/if}}
+
+        {{#if isCreate}}
+            <li class="active pink accent-2"><a href="/create">Create List</a></li>
+        {{else}}
+            <li><a href="/create">Create List</a></li>
+        {{/if}}
+
+        {{#if isAlready}}
+            <li class="active pink accent-2"><a href="/already">Already to do</a></li>
+        {{else}}
+            <li><a href="/already">Already to do</a></li>
+        {{/if}}
+        
+        
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-links">
+             {{#if isIndex}}
+            <li class="active pink accent-2"><a href="/">ToDos</a></li>
+        {{else}}
+            <li><a href="/">ToDos</a></li>
+        {{/if}}
+
+        {{#if isCreate}}
+            <li class="active pink accent-2"><a href="/create">Create List</a></li>
+        {{else}}
+            <li><a href="/create">Create List</a></li>
+        {{/if}}
+
+        {{#if isAlready}}
+            <li class="active pink accent-2"><a href="/already">Already to do</a></li>
+        {{else}}
+            <li><a href="/already">Already to do</a></li>
+        {{/if}}
+  </ul>
+        
+<script>
+     document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });   
+</script>
+    

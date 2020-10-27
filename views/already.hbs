@@ -1,0 +1,22 @@
+
+
+{{#if todos.length}}
+    <h2>Already To Do</h2>
+    <ul>
+    {{#each todos}}
+        <li class="todo">
+            <form action="/delete" method="POST">
+                <label>
+                    <span>{{title}}</span>
+                    <input type="hidden" value="{{_id}}" name="id">
+                    <button class="btn red accent-3" type="submit">Delete</button>
+                </label>
+            </form>         
+        </li>
+    {{/each}}
+    </ul>
+{{else}}
+    <h2>Nothing Already!</h2>
+    <a href="/create">Create new list now!</a>
+{{/if}}
+
